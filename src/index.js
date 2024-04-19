@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
+import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 // PrimeReact
-import 'primereact/resources/themes/saga-blue/theme.css';
-import 'primereact/resources/primereact.min.css'; 
+import "primereact/resources/themes/lara-light-blue/theme.css";
+import 'primereact/resources/primereact.css'; 
+import { PrimeReactProvider } from 'primereact/api';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <PrimeReactProvider>
+      <App />
+    </PrimeReactProvider>
   </React.StrictMode>
 );
 
