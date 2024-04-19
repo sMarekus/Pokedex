@@ -19,10 +19,18 @@ function PokemonDetail() {
     if (!pokemon) return <div>Loading...</div>;
 
     return (
-        <div>
-            <h1>{pokemon.name}</h1>
-            <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-        </div>
+        <>
+            <div className="flex bg-red-300 h-40">
+                
+            </div>
+            <div className="flex bg-white rounded-t-3xl -mt-7">
+                <div className="container mx-auto">
+                    <div></div>
+                    <h1>{pokemon.name}</h1>
+                    <img src={pokemon.sprites.front_default} alt={pokemon.name} />
+                </div>
+            </div>
+        </>
     )
 }
 

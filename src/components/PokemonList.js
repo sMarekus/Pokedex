@@ -28,17 +28,16 @@ function PokemonList() {
             <div className="flex">
                 <div className="container mx-auto py-12">
                     <h1 className="font-orbitron text-5xl">Pokédex</h1>
-                    <Button label="Submit" />
                 </div>
             </div>
             <div className="flex">
-                <div className="container mx-auto">
+                <div className="container mx-auto pb-8">
                     <div className="grid grid-cols-4 gap-4">
                     {pokemons.slice(first, first + rows).map((pokemon, index) => (
                         <PokemonCard key={index} index={first + index + 1} pokemon={pokemon} />
                     ))}
                     </div>
-                    <Paginator first={first} rows={rows} totalRecords={pokemons.length} onPageChange={onPageChange} />
+                    <Paginator className="pt-8" first={first} rows={rows} totalRecords={pokemons.length} onPageChange={onPageChange} />
                 </div>
             </div>
         </>
