@@ -1,7 +1,9 @@
 import React from 'react';
 import pokemonColors from '../utils/pokemonColors';
+import { useNavigate } from 'react-router-dom';
 
 function PokemonCard({ pokemon, index }) {
+    const navigate = useNavigate();
     const pokemonColor = pokemonColors[pokemon.color] || "grey";
 
     // const pokemonColor = pokemon.color;
@@ -10,8 +12,12 @@ function PokemonCard({ pokemon, index }) {
         backgroundColor: pokemonColor
     };
 
+    const navigateToPokemon = () => {
+        navigate(`/${pokemon.name}`);
+    };
+
     return (
-        <div className="bg-red-500 flex w-full px-4 py-4 rounded-xl" style={extraStyle}>
+        <div className="bg-red-500 flex w-full px-4 py-4 rounded-xl" style={extraStyle} onClick={ navigateToPokemon }>
             <div className="w-3/4 flex justify-center flex-col">
                 <span>#{ index }</span>
                 <h1 className="text-white font-orbitron">{ pokemon.name }</h1>
