@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 // PrimeReact
 import "primereact/resources/themes/lara-light-blue/theme.css";
 import 'primereact/resources/primereact.css'; 
+import 'primeicons/primeicons.css';
 import { PrimeReactProvider } from 'primereact/api';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
