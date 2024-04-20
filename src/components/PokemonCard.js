@@ -19,8 +19,8 @@ function PokemonCard({ pokemon, index }) {
     return (
         <div className="bg-red-500 flex w-full px-4 py-4 rounded-xl" style={extraStyle} onClick={ navigateToPokemon }>
             <div className="w-3/4 flex justify-center flex-col">
-                <span>#{ index }</span>
-                <h1 className="text-white font-orbitron">{ pokemon.name }</h1>
+                <span className="text-[#0C0C0C] font-mono">#{ index }</span>
+                <h1 className="text-white font-orbitron capitalize">{ pokemon.name }</h1>
             </div>
             <div className="w-1/4 flex items-center">
                 <img src={pokemon.image} alt={pokemon.name} />
