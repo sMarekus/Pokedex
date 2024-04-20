@@ -24,3 +24,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.p-highlight {
+  background-color: #f3f4f6;
+  color: #0C0C0C;
+}
