@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { color } from 'chart.js/helpers';
 
 const BASE_URL = "http://pokeapi.co/api/v2/pokemon";
 

@@ -5,7 +5,7 @@ import PokemonDetail from './components/PokemonDetail';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/pokedex">
       <Routes>
         <Route path="/" element={<PokemonList />} />
         <Route path="/:name" element={<PokemonDetail />} />
